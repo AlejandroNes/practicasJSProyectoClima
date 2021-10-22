@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Clima</title>
+</head>
+<body>
+    <h2 class="text-center text-info mt-3">PROYECTO CLIMA</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 ">
+                <form action="" class="shadow p-3" id="formulario">
+                    <div class="mt-2">
+                        <label for="cuidad">Ingrese cuidad</label>
+                        <input type="text" id="cuidad" class="form-control">
+                    </div>
+                    <div class="mt-2">
+                        <label for="pais">Ingrese Pais</label>
+                        <select class="form-select" name="pais" id="pais">
+                            <option value="BO">Bolivia</option>
+                            <option value="PE">Perú</option>
+                            <option value="MX">Mexico</option>
+                            <option value="AR">Argentina</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="boton" class="btn btn-dark w-100 mt-4">BUSCAR</button>
+                </form>
+            </div>
+            <div class="col-12 col-sm-6 ">
+                <div id="resultado" class="card shadow">
+                    <h3 class="text-center py-4 text-secondary">SIN RESULTADOS</h3>
+                  </div>
+            </div>
+           
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
